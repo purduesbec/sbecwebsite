@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Purdue SBEC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #111111;
+            color: #111111;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #cfb87c;
+            margin-top: 0;
+        }
+        .content {
+            box-sizing: border-box;
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 18px;
+            border: 1px solid #d8c9a1;
+            padding: 28px;
+            box-shadow: 0 18px 38px rgba(0,0,0,0.08);
+        }
+        p {
+            line-height: 1.75;
+            color: #444444;
+            overflow-wrap: break-word;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px 20px;
+            margin: 24px 0 30px;
+        }
+        .leader-card {
+            text-align: center;
+            min-width: 0;
+        }
+        .leader-card img {
+            width: 100%;
+            max-width: 180px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 16px;
+            border: 1px solid #d8c9a1;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+            margin-bottom: 12px;
+        }
+        .leader-name {
+            margin: 0;
+            font-size: 1rem;
+            color: #111111;
+        }
+        .leader-role {
+            margin: 6px auto 0;
+            max-width: 200px;
+            font-size: 0.78rem;
+            line-height: 1.45;
+            color: #555555;
+            overflow-wrap: break-word;
+        }
+        .advisor-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px 20px;
+            margin: 24px 0 10px;
+        }
+        .note {
+            margin-top: 20px;
+            padding: 18px;
+            background-color: #fff4d4;
+            border-left: 4px solid #d9b86a;
+            color: #5f4d27;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        nav a {
+            color: #cfb87c;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 700;
+        }
+        footer {
+            margin-top: auto;
+        }
+        .social-footer {
+            max-width: 960px;
+            margin: 34px auto 0;
+            padding: 26px 24px 30px;
+            border-radius: 22px;
+            background-color: #1e1a14;
+            color: #fff8eb;
+            text-align: center;
+            box-shadow: 0 18px 38px rgba(0,0,0,0.18);
+        }
+        .social-footer h2 {
+            margin: 0 0 18px;
+            font-size: 2rem;
+            color: #fff8eb;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .footer-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-width: 150px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            background-color: #cfb87c;
+            color: #111111;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        .footer-link:hover {
+            transform: translateY(-2px);
+            background-color: #e6ce8c;
+        }
+        .footer-icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            flex-shrink: 0;
+        }
+        .footer-icon svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            fill: currentColor;
+        }
+        @media (max-width: 700px) {
+            .leadership-grid {
+                grid-template-columns: 1fr;
+            }
+            .advisor-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 560px) {
+            body {
+                padding: 14px;
+            }
+            nav {
+                line-height: 1.9;
+                margin-bottom: 12px;
+            }
+            nav a {
+                display: inline-block;
+                margin: 0 7px;
+                padding: 2px 0;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .content {
+                padding: 20px;
+                border-radius: 14px;
+            }
+            .leader-card img {
+                max-width: 150px;
+            }
+            .social-footer {
+                width: 100%;
+                margin-top: 24px;
+                padding: 22px 16px 24px;
+                border-radius: 16px;
+            }
+            .social-footer h2 {
+                font-size: 1.6rem;
+            }
+            .footer-links {
+                gap: 10px;
+            }
+            .footer-link {
+                width: 100%;
+                max-width: 260px;
+                min-width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> | <a href="current_projects.html">Current Projects</a> | <a href="completed_projects.html">Completed Projects</a> | <a href="events.html">Events</a>
+    </nav>
+    <h1>About Us</h1>
+    <div class="content">
+        <p class="section-title"><strong>Mission</strong></p>
+        <p>SBEC strives to help a diversity of local small businesses grow through the development of low-cost engineering-oriented solutions, while also providing Purdue students valuable engineering experience working with real-world businesses and their problems.</p>
+                <p class="section-title"><strong>Leadership</strong></p>
+        <div class="leadership-grid">
+            <div class="leader-card">
+                <img src="henry.png" alt="Henry Cooper">
+                <p class="leader-name"><strong>Henry Cooper</strong></p>
+                <p class="leader-role">President; Project and Electronics Lead (Automatic Ingredient Dispenser)</p>
+            </div>
+            <div class="leader-card">
+                <img src="dana.png" alt="Dana Abbring">
+                <p class="leader-name"><strong>Dana Abbring</strong></p>
+                <p class="leader-role">Treasurer; Events and Fundraising Lead</p>
+            </div>
+            <div class="leader-card">
+                <img src="alan.png" alt="Alan Alvarenga">
+                <p class="leader-name"><strong>Alan Alvarenga</strong></p>
+                <p class="leader-role">Vice President; Project Member (Automatic Ingredient Dispenser)</p>
+            </div>
+            <div class="leader-card">
+                <img src="joe.png" alt="Joe Sowers">
+                <p class="leader-name"><strong>Joe Sowers</strong></p>
+                <p class="leader-role">Project Lead (Syrup Dispenser)</p>
+            </div>
+            <div class="leader-card">
+                <img src="yash2.jpg" alt="Yash Chavan">
+                <p class="leader-name"><strong>Yash Chavan</strong></p>
+                <p class="leader-role">Project Lead (Dashboard)</p>
+            </div>
+            <div class="leader-card">
+                <img src="arun.png" alt="Arun Raman">
+                <p class="leader-name"><strong>Arun Raman</strong></p>
+                <p class="leader-role">Student Advisor</p>
+            </div>
+        </div>
+        <div class="advisor-grid">
+            <div class="leader-card">
+                <img src="ware.png" alt="Dr. Jason Ware">
+                <p class="leader-name"><strong>Dr. Jason Ware</strong></p>
+                <p class="leader-role">Faculty Advisor</p>
+                <p class="leader-role">Purdue Office of Engagement Fellow, Clinical Associate Professor of JMHC</p>
+            </div>
+            <div class="leader-card">
+                <img src="biller.png" alt="Professor Stephan Biller">
+                <p class="leader-name"><strong>Dr. Stephan Biller</strong></p>
+                <p class="leader-role">Faculty Advisor</p>
+                <p class="leader-role">Harold T. Amrine Distinguished Professor, Edwardson School of Industrial Engineering</p>
+            </div>
+        </div>
+        <!-- <p class="section-title"><strong>Value Add</strong></p>
+        <p>For Businesses:</p>
+        <p><i>- Affordable custom solutions </i></p>
+        <p><i>- Consistent and accessible communication through geographic proximity </i></p>
+        <p><i>- Attention to project deadlines</i></p>
+        <p><i>- Access to a diversity of skillsets fit-to-task and who are excited to help!</i></p>
+        <p>For Students:</p>
+        <p><i>- Brainstorm, design, prototype, deploy, and monitor success - all in a defined timeframe</i></p>
+        <p><i>- Have a significant contribution in a small hand-selected team </i></p> 
+        <p><i>- Establish a connection with the Greater Lafayette community </i></p>
+        <p><i>- Access to all-club socials and events...and (occasionally) get free things from businesses!</i></p> -->
+    </div>
+    <footer class="social-footer">
+        <h2>Let's Connect!</h2>
+        <div class="footer-links">
+            <a class="footer-link" href="mailto:sbec@purdue.edu"><span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h13A2.5 2.5 0 0 1 21 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 18.5zm2.2-.5 6.8 5.7 6.8-5.7zm13.8 1.3-6.36 5.31a1 1 0 0 1-1.28 0L5 6.3v12.2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5z"/></svg></span><span>Contact</span></a>
+            <a class="footer-link" href="https://share.google/XQn2tbArwzcOPO8u0" target="_blank" rel="noopener noreferrer"><span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8A1.5 1.5 0 1 0 5 6.5 1.5 1.5 0 0 0 6.5 8M5 9h3v10H5zm5 0h2.87v1.37h.04A3.15 3.15 0 0 1 15.75 8c3.01 0 3.57 1.98 3.57 4.56V19h-3v-5.68c0-1.36 0-3.11-1.9-3.11s-2.19 1.48-2.19 3V19h-3z"/></svg></span><span>LinkedIn</span></a>
+            <a class="footer-link" href="https://www.instagram.com/sbec_purdue/" target="_blank" rel="noopener noreferrer"><span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2A3 3 0 0 0 4 7v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm10.5 1.5A1.25 1.25 0 1 1 16.25 6.75 1.25 1.25 0 0 1 17.5 5.5M12 7a5 5 0 1 1-5 5 5 5 0 0 1 5-5m0 2a3 3 0 1 0 3 3 3 3 0 0 0-3-3"/></svg></span><span>Instagram</span></a>
+            <a class="footer-link" href="https://www.facebook.com/people/Small-Business-Engineering-Club-Purdue/61583274197963/" target="_blank" rel="noopener noreferrer"><span class="footer-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.08c0-.87.24-1.46 1.5-1.46H16.7V4.94A22 22 0 0 0 14.2 4c-2.47 0-4.2 1.5-4.2 4.27V11H7v3h3V22z"/></svg></span><span>Facebook</span></a>
+        </div>
+    </footer>
+</body>
+</html>
