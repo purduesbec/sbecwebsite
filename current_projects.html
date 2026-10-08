@@ -272,7 +272,20 @@
         <a href="index.html">Home</a> | <a href="about_us.html">About Us</a> | <a href="completed_projects.html">Completed Projects</a> | <a href="events.html">Events</a>
     </nav>
     <h1>Current Projects</h1>
-    <div class="project-panel" onclick="openModal('modal1')">
+
+
+    //This is where you edit the project project-panel
+
+     <div class="project-panel" onclick="openModal('modal1')">
+        <div class="project-panel-content">
+            <div class="project-text">
+                <div class="project-name">Hydraulic Post Installation Project</div>
+                <div class="business">Wea Creek Orchard</div>
+            </div>
+            <img class="project-logo" src="WeaCreek.png" alt="Wea Creek Logo">
+        </div>
+    </div>
+    <div class="project-panel" onclick="openModal('modal2')">
         <div class="project-panel-content">
             <div class="project-text">
                 <div class="project-name">Automatic Ingredient Dispenser</div>
@@ -281,7 +294,7 @@
             <img class="project-logo" src="marcelaslogo.png" alt="Marcela's Cakes, Bakery, and Cafe logo">
         </div>
     </div>
-    <div class="project-panel" onclick="openModal('modal2')">
+    <div class="project-panel" onclick="openModal('modal3')">
         <div class="project-panel-content">
             <div class="project-text">
                 <div class="project-name">Inventory Tracker and Order Dashboard</div>
@@ -290,7 +303,7 @@
             <img class="project-logo" src="ghostlogo.png" alt="Ghost Coffee Roasters logo">
         </div>
     </div>
-    <div class="project-panel" onclick="openModal('modal3')">
+    <div class="project-panel" onclick="openModal('modal4')">
         <div class="project-panel-content">
             <div class="project-text">
                 <div class="project-name">Automatic Syrup Dispenser</div>
@@ -300,9 +313,26 @@
         </div>
     </div>
 
+
+
+
+    //This is where you edit what you actually see when you click on the project
+
+
     <div id="modal1" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Hydraulic Post Installation Project</h2>
+            <div class="side-by-side">
+                <img src="WeaCreekPosts.png" alt="Post Example">
+                <img src="WeaCreekExcelSS" alt="Current Solutions in Progress">
+            </div>
+            <p>Designing a mechanical solution to decrease post installation process time by two years.</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
             <h2>Automatic Ingredient Dispenser</h2>
             <div class="side-by-side">
                 <img src="aidteam.png" alt="Appointment Booking Page">
@@ -311,9 +341,9 @@
             <p>Creating a device that accurately dispenses user-inputted amounts of different solids to facilitate a key time constraint in the cake-baking process for Marcela's Cakes, Bakery, and Cafe.</p>
         </div>
     </div>
-    <div id="modal2" class="modal">
+    <div id="modal3" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
             <h2>Inventory Tracker and Order Dashboard</h2>
             <div class="side-by-side">
                 <img src="dashboard2.png" alt="Appointment Booking Page">
@@ -322,9 +352,9 @@
             <p>Building a live order dashboard and inventory tracker that updates with each in-shop order and sends a re-order notification when inventory passes below a threshold.</p>
         </div>
     </div>
-    <div id="modal3" class="modal">
+    <div id="modal4" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
             <h2>Automatic Syrup Dispenser</h2>
             <div class="side-by-side">
                 <img src="syrupdispenser2.png" alt="Appointment Booking Page">
