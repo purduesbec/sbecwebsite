@@ -301,7 +301,16 @@
         <a href="index.html">Home</a> | <a href="about_us.html">About Us</a> | <a href="current_projects.html">Current Projects</a> | <a href="events.html">Events</a>
     </nav>
     <h1>Project Archive</h1>
-    <div class="project-panel" onclick="openModal('modal1')">
+        <div class="project-panel" onclick="openModal('modal1')">
+        <div class="project-panel-content">
+            <div class="project-text">
+                <div class="project-name">Inventory Tracker and Order Dashboard</div>
+                <div class="business">Ghost Coffee Roasters</div>
+            </div>
+            <img class="project-logo" src="ghostlogo.png" alt="Ghost Coffee Roasters logo">
+        </div>
+    </div>
+    <div class="project-panel" onclick="openModal('modal2')">
         <div class="project-panel-content">
             <div class="project-text">
                 <div class="project-name">Appointment Scheduling Web App</div>
@@ -310,7 +319,7 @@
             <img class="project-logo" src="rnlogo.png" alt="RN Luxury Couture logo">
         </div>
     </div>
-    <div class="project-panel" onclick="openModal('modal2')">
+    <div class="project-panel" onclick="openModal('modal3')">
         <div class="project-panel-content">
             <div class="project-text">
                 <div class="project-name">Flower Procurement Optimization Tool</div>
@@ -319,7 +328,7 @@
             <img class="project-logo" src="bloomslogo.png" alt="Blooms and Petals Flowers and Events logo">
         </div>
     </div>
-    <div class="project-panel" onclick="openModal('modal3')">
+    <div class="project-panel" onclick="openModal('modal4')">
         <div class="project-panel-content">
             <div class="project-text">
                 <div class="project-name">Custom Pick n' Mix Profit & Inventory Tracker</div>
@@ -328,7 +337,7 @@
             <img class="project-logo" src="sweetlogo.png" alt="Something Sweet Candy Store logo">
         </div>
     </div>
-    <div class="project-panel" onclick="openModal('modal4')">
+    <div class="project-panel" onclick="openModal('modal5')">
         <div class="project-panel-content">
             <div class="project-text">
                 <div class="project-name">Cake Order Web App & Database</div>
@@ -338,7 +347,17 @@
         </div>
     </div>
 
-    <div id="modal1" class="modal">
+        <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Inventory Tracker and Order Dashboard</h2>
+            <div class="side-by-side">
+                <img src="dashboard2.png" alt="Appointment Booking Page">
+                <img src="ghostlogo.png" alt="Order Management System snippet">
+            </div>
+            <p>Building a live order dashboard and inventory tracker that updates with each in-shop order and sends a re-order notification when inventory passes below a threshold.</p>
+        </div>
+    </div><div id="modal1" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal1')">&times;</span>
             <h2>Appointment Scheduling Web App</h2>
